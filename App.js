@@ -144,8 +144,8 @@ function Agenda() {
       return program;
     });
     setPrograms(updatedPrograms);
-    setEditingId(null); // Reset editing state
-    setNewTitle(''); // Reset new title input
+    setEditingId(null); 
+    setNewTitle(''); 
   };
 
   const startEditing = (id, currentTitle) => {
@@ -192,15 +192,12 @@ function Profil() {
   const [image, setImage] = useState(null);
 
   const handleSaveProfile = () => {
-    // Ici vous pouvez ajouter la logique pour sauvegarder les informations du profil
-    // par exemple, en les envoyant à une API ou en les stockant localement
+    
     Alert.alert('Profil sauvegardé!', 'Les informations de votre profil ont été sauvegardées.');
   };
 
   const handleChooseImage = () => {
-    // Ici vous pouvez ajouter la logique pour choisir une image depuis la galerie de l'appareil
-    // Par exemple, en utilisant la librairie React Native Image Picker
-    // https://github.com/react-native-image-picker/react-native-image-picker
+ 
     Alert.alert('Choisir une image', 'Fonctionnalité non implémentée dans cette démo.');
   };
 
